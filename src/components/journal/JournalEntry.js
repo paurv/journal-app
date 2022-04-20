@@ -18,6 +18,10 @@ export const JournalEntry = () => {
                     Anim irure dolor aliqua sit mollit.
                 </p>
             </div>
+            <div className="journal__entry-date-box">
+                <span>Monday</span>
+                <h4>24</h4>
+            </div>
         </div>
     )
 }

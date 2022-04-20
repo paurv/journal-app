@@ -7,7 +7,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     padding-left: 10px;
     padding-right: 10px;
     width: 450px;
@@ -41,7 +41,8 @@
 .jorunal__entries {
     margin-top: 30px;
     flex: 1 1 auto;
-    // overflow: scroll;
+    overflow-y: scroll;
+    cursor: pointer;
 }
 
 .journal__entry {
@@ -69,4 +70,16 @@
 
 .journal__entry-content {
     font-size: 10px;
+}
+
+.journal__entry-date-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.journal__entry-date-box  {
+    font-size: 12px;
 }
