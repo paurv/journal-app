@@ -1,10 +1,13 @@
 import React from 'react'
-// import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux'; // Provee informacion a toda la aplicacion 
+
+import { store } from './store/store';
 import { AppRouter } from './routers/AppRouter';
 
 export const JournalApp = () => {
-  return (<AppRouter />)
-    // <BrowserRouter>
-    //     <AppRouter />
-    // </BrowserRouter>
+  return (
+    <Provider store={ store }>
+      <AppRouter />
+    </Provider>
+  );
 }
